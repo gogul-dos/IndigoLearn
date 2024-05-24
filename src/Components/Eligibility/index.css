@@ -1,0 +1,14 @@
+.eligible-image {
+  height: 100%;
+  width: 50%;
+}
+.elible-points-list {
+  display: flex;
+}
+.unordered-eligible-list {
+  padding: 20px;
+  width: 70%;
+}
+.eligible-item {
+  margin: 20px;
+}

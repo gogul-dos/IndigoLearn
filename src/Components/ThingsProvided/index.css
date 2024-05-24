@@ -1,0 +1,24 @@
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: darkgrey;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 10px;
+}
+.card-image {
+  height: auto;
+  width: 300px;
+  margin-right: 20px;
+  border-radius: 20px;
+}
+.card-details {
+  margin-left: 20px;
+}
+.thing-provided-container {
+  height: 90vh;
+  overflow: auto;
+}
+hr {
+  margin: 10px;
+}

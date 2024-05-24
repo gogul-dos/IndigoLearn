@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { Component } from "react";
+import { Route, Switch, BrowserRouter } from "react-router-dom";
+import "./App.css";
+import Header from "./Components/Header";
+import Home from "./Components/Home";
+import WhyChooseUs from "./Components/WhyChooseUs";
+import Eligibility from "./Components/Eligibility";
+import THingsProvided from "./Components/ThingsProvided";
+import Placements from "./Components/Placements";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <BrowserRouter>
+        <Header />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/Why-choose-us" component={WhyChooseUs} />
+          <Route exact path="/eligibility" component={Eligibility} />
+          <Route exact path="/Things-provided" component={THingsProvided} />
+          <Route exact path="/Placements" component={Placements} />
+        </Switch>
+      </BrowserRouter>
+    );
+  }
 }
 
 export default App;
